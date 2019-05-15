@@ -7,6 +7,8 @@
     --send-message-form: #7830b3;
 }
 
+/* Grid */
+
 .container {
     height: 100vh;
     flex-direction: column;
@@ -26,4 +28,22 @@
 .column {
     flex-basis: 0;
     height: auto;
+}
+
+/* Navbar */
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    color: var(--secondary-color);
+    background: var(--main-color);
+    text-align: center;
+    
+}
+
+.title-h1 {
+    margin: 0;
+    font-size: 20px;
 }
