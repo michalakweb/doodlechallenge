@@ -7,9 +7,14 @@ import MessageList from './components/MessageList';
 import SendMessageForm from './components/SendMessageForm';
 
 class App extends React.Component {
-  state = {
-    messages: []
-  }
+  constructor() {
+    super()
+    this.state = {
+        messages: []
+    }
+    this.sendMessage = this.sendMessage.bind(this)
+    this.getData = this.getData.bind(this)
+  } 
 
   // App loads data once the component mounts
   componentDidMount() {
@@ -29,12 +34,29 @@ class App extends React.Component {
     )
   }
 
+  // message is sent via a post method 
+  // and then component updates its state via getData()
+  sendMessage(message) {
+    fetch('https://chatty.kubernetes.doodle-test.com/api/chatty/v1.0/?token=6bMaqT4jsfNY', {
+        method: 'post',
+        headers: {
+            'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({message: `${message}`, author: 'Mateusz'})
+    })
+    .then(() => {
+        this.getData();
+    }
+    );
+  }
+
   render() {
     return (
       <div className='app'>
         <Navbar/>
         <MessageList messages={this.state.messages} />
-        <SendMessageForm />
+        <SendMessageForm sendMessage={this.sendMessage}/>
       </div>
     )
   }
