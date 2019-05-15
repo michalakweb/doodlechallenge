@@ -80,3 +80,27 @@
     border-radius: 8px;
     line-height: 30px;
 }
+
+/* Form */
+
+.sendMessage-form {
+    background: var(--send-message-form);
+    display: flex;
+    box-sizing: border-box;
+    height: 60px;
+    margin-bottom: 0;
+}
+
+.sendMessage-form-input {
+    max-width: 700px;
+    width: 100%;
+    margin: 5px auto 5px auto;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.247);
+    background: white;
+    font-size: 20px;
+}
+
+.sendMessage-form-input:focus {
+    outline-width: 0;
+}
