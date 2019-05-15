@@ -22,8 +22,13 @@
     flex-direction: column;
     display: flex;
     padding: 0;
-    border-left: 1px solid rgba(0, 0, 0, 0.178);
-    border-right: 1px solid rgba(0, 0, 0, 0.178);
+}
+
+@media screen and (min-width: 800px) {
+    .container {
+        border-left: 1px solid rgba(0, 0, 0, 0.178);
+        border-right: 1px solid rgba(0, 0, 0, 0.178);
+    }
 }
 
 .column--list {
