@@ -20,7 +20,7 @@
     display: flex;
     overflow: auto;
     margin: 0;
-    /* background-image: url(./doodles.png); */
+    background-image: url(./img/doodles.png);
 }
   
 .column {
