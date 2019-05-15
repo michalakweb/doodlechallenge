@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Navbar from './components/Navbar';
 
 class App extends React.Component {
   state = {
@@ -24,9 +25,8 @@ class App extends React.Component {
   render() {
     return (
       <div className='app'>
-        Hello
+        <Navbar/>
         {
-          //Navbar
           //MessageList
           //SendMessageForm
         }
