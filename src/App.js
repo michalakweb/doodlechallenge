@@ -1,7 +1,10 @@
 import React from 'react';
 import './App.css';
+
+// Components
 import Navbar from './components/Navbar';
 import MessageList from './components/MessageList';
+import SendMessageForm from './components/SendMessageForm';
 
 class App extends React.Component {
   state = {
@@ -31,10 +34,7 @@ class App extends React.Component {
       <div className='app'>
         <Navbar/>
         <MessageList messages={this.state.messages} />
-        {
-          //MessageList
-          //SendMessageForm
-        }
+        <SendMessageForm />
       </div>
     )
   }
