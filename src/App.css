@@ -1,0 +1,29 @@
+:root {
+    --main-color: #7830b3;
+    --msg-color: #9a42e2;
+    --secondary-color: white;
+    --main-text-color: #3e5869;
+    --secondary-text-color: #b0c7d6;
+    --send-message-form: #7830b3;
+}
+
+.container {
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    padding: 0;
+}
+
+.column--list {
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    overflow: auto;
+    margin: 0;
+    /* background-image: url(./doodles.png); */
+}
+  
+.column {
+    flex-basis: 0;
+    height: auto;
+}

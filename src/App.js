@@ -53,10 +53,17 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className='app'>
-        <Navbar/>
-        <MessageList messages={this.state.messages} />
-        <SendMessageForm sendMessage={this.sendMessage}/>
+      <div className='container'>
+        <div className='column'>
+          <Navbar/>
+        </div>
+        <div className='column--list'>
+          <MessageList messages={this.state.messages} />
+        </div>
+        <div className='column'>
+          <SendMessageForm sendMessage={this.sendMessage}/>
+        </div>
+        
       </div>
     )
   }
