@@ -4,10 +4,12 @@ import React from 'react';
 //and mapped to become an unordered list element
 const MessageList = (props) => (
     <div>
-        <ul>
+        <ul className='messageList'>
             {
                 props.messages.map(message => (
-                    <li key={message._id}>
+                    <li 
+                    className='message'
+                    key={message._id}>
                         <div>{message.author}</div>
                         <div>{message.message}</div>
                     </li>

@@ -47,3 +47,36 @@
     margin: 0;
     font-size: 20px;
 }
+
+/* Message List and Messages */
+
+.messageList {
+    box-sizing: border-box;
+    padding: 0 6px 0 6px;
+    margin: 0;
+    width: 100%;
+    word-break: break-all;
+    background: transparent;
+}
+
+.message  {
+    max-width: 320px;
+    width: fit-content;
+    overflow-wrap: break-word;
+    line-height: 20px;
+    margin: 15px 0;
+}
+
+.message div:nth-child(1) {
+    font-size: 11px;
+    color: var(--main-text-color);
+    opacity: 0.9;
+    margin-bottom: 6px;
+}
+.message div:nth-child(2) {
+    background: var(--msg-color);
+    color: var(--secondary-color);
+    padding: 4px 8px;
+    border-radius: 8px;
+    line-height: 30px;
+}
