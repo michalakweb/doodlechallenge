@@ -1,13 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div>
-      
-    </div>
-  );
+class App extends React.Component {
+  state = {
+    messages: []
+  }
+
+  render() {
+    return (
+      <div className='app'>
+        Hello
+        {
+          //Navbar
+          //MessageList
+          //SendMessageForm
+        }
+      </div>
+    )
+  }
 }
 
 export default App;
